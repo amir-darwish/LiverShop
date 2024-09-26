@@ -66,7 +66,11 @@ if ($response !== false) {
 
             }
         } else {
-         echo '<p>Aucun auteur trouvé.</p>';
+         echo '<h2>Aucun auteur trouvé.</h2>';
+         echo '<br>';    
+              echo '<br>';
+         echo '<br>';
+
         }
         ?>
     </div>

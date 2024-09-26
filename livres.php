@@ -99,7 +99,8 @@ foreach ($auteurs as $auteur) {
                 echo '</div>';
             }
         } else {
-            echo '<p>Aucun livre trouvé pour cet auteur.</p>';
+            echo '<h1>Aucun livre trouvé pour cet auteur.</h1>';
+
         }
         ?>
     </div>

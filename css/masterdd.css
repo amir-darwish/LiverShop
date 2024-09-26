@@ -288,6 +288,7 @@ section{
     flex-wrap:wrap; 
     justify-content: space-evenly;
 }
+
 .footer .box{
     height: 5rem;
     width:auto;
