@@ -73,7 +73,7 @@
             <div class="icons">
                 <a href="#" class="fas fa-search"></a>
                 <a href="#" class="fas fa-heart"></a>
-                <a href="http://localhost:8080/book-id1.php" class="fas fa-eye"></a>
+                <a href="book-id1.php" class="fas fa-eye"></a>
             </div>
             <div class="image">
                 <img src="img/book _id1.jpeg" alt="">
