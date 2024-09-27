@@ -20,9 +20,9 @@
 
 <!-- bottom navbar  -->
 <nav class="bottom-navbar">
-    <a href="/home/amir/Desktop/Book_Store/index.html" class="fas fa-home"></a>
+    <a href="index.php" class="fas fa-home"></a>
     <a href="#auteurs" class="fas fa-pencil"></a>
-    <a href="/home/amir/Desktop/Book_Store/livers-papier.html" class="fas fa-book-open"></a>
+    <a href="livers-papier.php" class="fas fa-book-open"></a>
     <a href="#livers-numerique" class="fas fa-file-pdf"></a>
     <a href="#contact" class ="fas fa-envelope"></a>
     </nav>
@@ -71,7 +71,7 @@
                 <div class="icons">
                     <a href="#" class="fas fa-search"></a>
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="/home/amir/Desktop/Book_Store/book-id1.html" class="fas fa-eye"></a>
+                    <a href="book-id1.html" class="fas fa-eye"></a>
                 </div>
                 <div class="image">
                     <img src="img/book _id1.jpeg" alt="">

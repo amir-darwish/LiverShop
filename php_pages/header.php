@@ -19,9 +19,9 @@
     </div>
     <div class="header-2">
         <nav class="navbar">
-        <a href="http://localhost:8080/index.php">Page Principles</a>
-        <a href="/auteurs.php">Auteurs</a>
-        <a href="http://localhost:8080/livers-papier.php">Livers Papiers</a>
+        <a href="index.php">Page Principles</a>
+        <a href="auteurs.php">Auteurs</a>
+        <a href="livers-papier.php">Livers Papiers</a>
         <a href="#">Livers Numérique</a>
         <a href="#contact">Nous Contacter</a>
         </nav>
