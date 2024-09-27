@@ -3,15 +3,11 @@
 if (isset($_GET['id'])) {
     $author_id = $_GET['id'];
 
-    // URL de l'API pour récupérer les livres de cet auteur
     $api_url = 'https://filrouge.uha4point0.fr/V2/livres/livres' ;
 
-    // Récupérer les livres de l'auteur
     $response = file_get_contents($api_url);
 
-    // Vérifier si la réponse a été reçue correctement
     if ($response !== false) {
-        // Convertir les données JSON en tableau PHP
         $livres = json_decode($response, true);
         $i=0;
         foreach ($livres as $livers1)

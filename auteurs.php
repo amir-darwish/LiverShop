@@ -1,13 +1,9 @@
 <?php
-// URL de votre API
 $api_url = 'https://filrouge.uha4point0.fr/V2/livres/auteurs';
 
-// Utiliser file_get_contents pour récupérer les données de l'API
 $response = file_get_contents($api_url);
 
-// Vérifier si la réponse a été reçue correctement
 if ($response !== false) {
-    // Convertir les données JSON en tableau PHP
     $auteurs = json_decode($response, true);
 } else {
     $auteurs = [];
@@ -37,7 +33,6 @@ if ($response !== false) {
     <div class="authors-container">
         <?php
         if (!empty($auteurs)) {
-            // Boucler sur la liste des auteurs
             foreach ($auteurs as $auteur) {
                 echo '<div class="author-card">';
                 echo '<img src="' . $auteur['photo'] . '" alt="Photo de l\'auteur">';
