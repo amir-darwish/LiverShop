@@ -10,10 +10,10 @@ if (isset($_GET['id']) && $_GET['id'] !== '') {
     if ($response !== false) {
         $livres = json_decode($response, true);
         $i=0;
-        foreach ($livres as $livers1)
+        foreach ($livres as $livreForDelete)
         {
             
-            if ((int)$livers1['auteur'] !== (int)$author_id) {
+            if ((int)$livreForDelete['auteur'] !== (int)$author_id) {
                 unset($livres[$i]);
             }
             $i++;
@@ -30,11 +30,13 @@ $api_url_auteurs='https://filrouge.uha4point0.fr/V2/livres/auteurs';
 $response = file_get_contents($api_url_auteurs);
 if ($response !== false) {
     $auteurs = json_decode($response, true);
-}
-foreach ($auteurs as $auteur) {
+    foreach ($auteurs as $auteur) {
     if ((int) $auteur['id'] === (int) $author_id) {
         break;
     }
+}
+} else {
+    $auteurs=[];
 }
 ?>
 
