@@ -1,8 +1,8 @@
 <?php
 // Vérifier si l'id de l'auteur est passé via l'URL
-if (isset($_GET['id'])) {
-    $author_id = $_GET['id'];
-
+if (isset($_GET['id']) && $_GET['id'] !== '') {
+    $author_id = $_GET['id'] ;
+    
     $api_url = 'https://filrouge.uha4point0.fr/V2/livres/livres' ;
 
     $response = file_get_contents($api_url);
