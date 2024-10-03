@@ -10,19 +10,20 @@ if ($response !== false) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset = "UTF-8" >
-        <meta http-equiv="X-UA-Comptaible" content="IE-edge">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>LivreShop</title>
 
         <link rel="stylesheet" href="css/masterdd.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <meta name = "description" content="Book Store"/>
+        <meta name="description" content="Book Store"/>
+        
+
     </head>
 <body>
 <!-- header section start -->
@@ -52,25 +53,33 @@ if ($response !== false) {
                 echo '<p class="biographie">' . $auteur['biographie'] . '</p>';
               
                 echo '<div class="btn-container">';
-                echo '<a href="livres.php?id=' . $auteur['id'] . '" class="btn">Afficher les livres</a>';
+                echo '<button class="btn" onclick="openModal(' . $auteur['id'] . ')">Afficher les livres</button>';
                 echo '</div>'; 
                 echo '</div>'; 
 
                 echo '</div>'; 
-               
-
             }
         } else {
          echo '<h2>Aucun auteur trouvé.</h2>';
-         echo '<br>';    
-              echo '<br>';
-         echo '<br>';
-
         }
         ?>
     </div>
+
+    <!-- نافذة منبثقة لعرض الكتب -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h1>Liste des livres</h1>
+            <div id="books-list" class="books-list"></div>
+        </div>
+    </div>
+
 <!-- Footer section starts -->
 <?php require_once(__DIR__ .'/php_pages/footer.php') ?>
 <!-- Footer section end -->
+
+<script src="js/script.js"></script>
+
+
 </body>
 </html>
