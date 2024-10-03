@@ -29,10 +29,9 @@
 
     <!-- featured section starts  -->
     <section class="featured" id="featured">
-    <h1 class="heading"> <span>Livers Papiers</span></h1>
+    <h1 class="heading"> <span>Livres Papiers</span></h1>
     <div class="featured-slider">
         <div class="wrapper-2" id="book-container">
-            <!-- سيتم هنا عرض الكتب -->
         </div>
     </div>
 </section>
