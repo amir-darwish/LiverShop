@@ -217,7 +217,7 @@ section{
     font-size: 1.4rem;
     color: var(--light-color);
 }
-.featured .featured-slider .box{
+.featured .featured-slider .box {
     width: 25rem;
     margin: 2rem 1rem;
     position:relative;
@@ -281,7 +281,7 @@ section{
     color: var(--light-color);
     text-decoration: line-through;
 }
-.wrapper-2{
+.wrapper-2, .book-container{
 
     display:flex;
     gap: 2.5rem; 
