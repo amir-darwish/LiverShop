@@ -8,7 +8,7 @@ fi
 
 PROJECT_DIR="/opt/lampp/htdocs/LivreShop"
 
-GIT_REPO="ssh://git@git.uha4point0.fr:22222/UHA40/fil-rouge-2024/4.0.1/projet-fil-rouge-uha-4.0.1.git"
+GIT_REPO="ssh://git@git.uha4point0.fr:22222/UHA40/fil-rouge-2024/4.0.1/mohamedamirdarwish_livreshop.git"
 
 SITE_URL="http://localhost/LivreShop"
 
