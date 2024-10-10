@@ -9,9 +9,9 @@ fetch('https://filrouge.uha4point0.fr/V2/livres/livres')
 
         bookElement.innerHTML = `
         <div class="icons">
-          <a href="#" class="fas fa-search"></a>
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
+          <a href="https://www.google.com/search?q=${book.titre}"target="_blank" class="fas fa-search"></a>
+          <a href="#" class="fa-solid fa-book-open-reader"></a>
+          <a href="livre_information.php?id=${book.id}" class="fas fa-eye"></a>
         </div>
         <div class="image">
           <img src="imgID/${book.id}.jpg" alt="">

@@ -72,7 +72,7 @@
         <div class="box">
             <div class="icons">
                 <a href="#" class="fas fa-search"></a>
-                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fa-solid fa-book-open-reader"></a>
                 <a href="book-id1.php" class="fas fa-eye"></a>
             </div>
             <div class="image">
@@ -87,7 +87,7 @@
         <div class="box">
             <div class="icons">
                 <a href="#" class="fas fa-search"></a>
-                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fa-solid fa-book-open-reader"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
             <div class="image">
@@ -102,7 +102,7 @@
         <div class="box">
             <div class="icons">
                 <a href="#" class="fas fa-search"></a>
-                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fa-solid fa-book-open-reader"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
             <div class="image">
@@ -117,7 +117,7 @@
         <div class="box">
             <div class="icons">
                 <a href="#" class="fas fa-search"></a>
-                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fa-solid fa-book-open-reader"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
             <div class="image">
@@ -132,7 +132,7 @@
         <div class="box">
             <div class="icons">
                 <a href="#" class="fas fa-search"></a>
-                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fa-solid fa-book-open-reader"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
             <div class="image">

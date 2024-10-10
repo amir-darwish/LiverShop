@@ -81,8 +81,8 @@ if ($response !== false) {
             foreach ($livres as $livre) {
                 echo '<div class="box">';
                 echo '<div class="icons">';
-                echo '<a href="#" class="fas fa-search"></a>';
-                echo '<a href="#" class="fas fa-heart"></a>';
+                echo '<a href="https://www.google.com/search?q='.$livre['titre'].' "class="fas fa-search"></a>';
+                echo '<a href="#" class="fa-solid fa-book-open-reader"></a>';
                 echo '<a href="#" class="fas fa-eye"></a>';
                 echo '</div>'; 
                 echo ' <div class="image">';           

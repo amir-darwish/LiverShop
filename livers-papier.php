@@ -21,7 +21,7 @@
     <nav class="bottom-navbar">
         <a href="#home" class="fas fa-home"></a>
         <a href="#auteurs" class="fas fa-pencil"></a>
-        <a href="#livers-papier" class="fas fa-book-open"></a>
+        <a href="#livers-papier" class="fa-solid fa-book-open-reader"></a>
         <a href="#livers-numerique" class="fas fa-file-pdf"></a>
         <a href="#contact" class ="fas fa-envelope"></a>
         </nav>
@@ -35,8 +35,7 @@
         </div>
     </div>
 </section>
-    <script src="js/script.js"></script> <!-- ربط الكود JavaScript -->
-    
+    <script src="js/script.js"></script>
     <!-- featured section end  -->
      
 <!-- Footer section starts -->

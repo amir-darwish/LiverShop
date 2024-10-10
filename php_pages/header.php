@@ -12,7 +12,7 @@
 
         <div class="icons">
             <div id="search-btn" class="fas fa-search"></div>
-            <a href="#" class="fas fa-heart"></a>
+            <!-- <a href="#" class="fas fa-heart"></a> -->
             <a href="#" class="fas fa-shopping-cart"></a>
 
         </div>
