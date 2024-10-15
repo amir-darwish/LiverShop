@@ -1,3 +1,13 @@
+// login
+let loginForm = document.querySelector('.login-form-container');
+document.querySelector('#login-btn').onclick = () => {
+  loginForm.classList.toggle('active');
+}
+document.querySelector('#close-login-btn').onclick = () => {
+  loginForm.classList.remove('active');
+}
+
+//afficher les livres du l'API
 fetch('https://filrouge.uha4point0.fr/V2/livres/livres') 
   .then(response => response.json())
   .then(data => {

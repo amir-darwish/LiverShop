@@ -29,6 +29,9 @@ if ($response !== false) {
 <!-- header section start -->
 <?php require_once(__DIR__ .'/php_pages/header.php'); ?>
 <!-- header section end -->
+ <!-- login form start -->
+<?php require_once(__DIR__ .'/php_pages/login.php'); ?>
+<!-- login form end -->
     <h1 class="Authors">Liste des auteurs</h1>
 
     <div class="authors-container">

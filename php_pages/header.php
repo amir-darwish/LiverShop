@@ -1,4 +1,6 @@
 <!-- header section start -->
+<script src="js/script.js" defer ></script>
+
 <header class="header">
 
     <div class="header-1">
@@ -14,6 +16,7 @@
             <div id="search-btn" class="fas fa-search"></div>
             <!-- <a href="#" class="fas fa-heart"></a> -->
             <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
 
         </div>
     </div>
@@ -27,6 +30,7 @@
         </nav>
 
     </div>
+    <script src="js/script.js" defer ></script>
 </header>
 
 <!-- header section end -->

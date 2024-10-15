@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="css/masterdd.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <meta name = "description" content="Book Store"/>
+        <script src="js/script.js" defer ></script>
+
     </head>
 
 <body>
@@ -28,7 +30,10 @@
     </nav>
 <!-- bottom-navbar end  -->
 
+<!-- login form start -->
+<?php require_once(__DIR__ .'/php_pages/login.php'); ?>
 
+<!-- login form end -->
 
  <!-- home section starts -->
 <section class="home" id="home">

@@ -55,7 +55,10 @@ else{
 <!-- header section start -->
 <?php require_once(__DIR__ .'/php_pages/header.php'); ?>
 <!-- header section end -->
+<!-- login form start -->
+<?php require_once(__DIR__ .'/php_pages/login.php'); ?>
 
+<!-- login form end -->
 
 <!-- bottom navbar  -->
 <nav class="bottom-navbar">
