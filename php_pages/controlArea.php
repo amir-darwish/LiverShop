@@ -15,11 +15,24 @@ if(isset($_SESSION["username"])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Control Panel</title>
+    <script>
+        function confirmDelete(){
+
+            return confirm("Do you want delete database ? ");
+        }
+    </script>
 </head>
 <body>
     <br>
-    <button>RESET DATABASE</button>
+
+    <form action="delete_db.php" method="POST" onsubmit="return confirmDelete()">
+
+        <button type="submit" name="delete">RESET DATABASE</button>
+
+    </form>
+
+    
     <br>
 </body>
 </html>

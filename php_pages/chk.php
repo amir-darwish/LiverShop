@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
     }
     else {
         echo 'ERROR In The USERNAME OR PASSWORD :( !';
-
     }
 
 } else {
