@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
         if (mysqli_connect($servername,$username,"",$dbname)){
             $sqlCommande = "DROP DATABASE $dbname";
             if (mysqli_query($conn, $sqlCommande)) {
-                echo "Delete DONE ";
+                echo "Delete DATABASE DONE <br>";
         } else {
                 echo "ERROR We can't delete $dbname";
         }
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
     mysqli_query($conn, $sqlCommande);
 
         if (mysqli_query($conn, $sqlCommande)) {
-            echo "done creat database";
+            echo "create database .... <br> ";
         } else {
             echo "error in creat database";
         }

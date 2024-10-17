@@ -1,13 +1,20 @@
 <?php
-$api_url = 'https://filrouge.uha4point0.fr/V2/livres/auteurs';
+include("php_pages/connection.php");
+$conn = mysqli_connect($servername,$username,"",$dbname);
 
-$response = file_get_contents($api_url);
+$query = "SELECT * FROM `auteurs`";
+$result = mysqli_query($conn,$query);
+$data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+$auteurs = $data;
+// $api_url = 'https://filrouge.uha4point0.fr/V2/livres/auteurs';
 
-if ($response !== false) {
-    $auteurs = json_decode($response, true);
-} else {
-    $auteurs = [];
-}
+// $response = file_get_contents($api_url);
+
+// if ($response !== false) {
+//     $auteurs = json_decode($response, true);
+// } else {
+//     $auteurs = [];
+// }
 ?>
 
 <!DOCTYPE html>
