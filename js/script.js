@@ -1,4 +1,4 @@
-// login
+//login
 let loginForm = document.querySelector('.login-form-container');
 document.querySelector('#login-btn').onclick = () => {
   loginForm.classList.toggle('active');
@@ -6,25 +6,29 @@ document.querySelector('#login-btn').onclick = () => {
 document.querySelector('#close-login-btn').onclick = () => {
   loginForm.classList.remove('active');
 }
-
-//afficher les livres du l'API
-fetch('https://filrouge.uha4point0.fr/V2/livres/livres') 
-  .then(response => response.json())
+//afficher les livres 
+fetch('/Book_Store/php_pages/apiFromDB.php') 
+  .then(response => {
+    return response.json();
+  })
   .then(data => {
     const container = document.getElementById('book-container');
+    console.log(data); 
+
+    container.innerHTML = ''; 
 
     data.forEach(book => {
       const bookElement = document.createElement('div');
       bookElement.classList.add('box');
 
-        bookElement.innerHTML = `
+      bookElement.innerHTML = `
         <div class="icons">
-          <a href="https://www.google.com/search?q=${book.titre}"target="_blank" class="fas fa-search"></a>
+          <a href="https://www.google.com/search?q=${book.titre}" target="_blank" class="fas fa-search"></a>
           <a href="#" class="fa-solid fa-book-open-reader"></a>
           <a href="livre_information.php?id=${book.id}" class="fas fa-eye"></a>
         </div>
         <div class="image">
-          <img src="imgID/${book.id}.jpg" alt="">
+          <img src="${book.photo}" alt="">
         </div>
         <div class="content">
           <h3>${book.titre}</h3>
@@ -38,13 +42,14 @@ fetch('https://filrouge.uha4point0.fr/V2/livres/livres')
   })
   .catch(error => console.error('Error fetching data:', error));
 
+
 // POP UP
 function openModal(auteurId) {
 
   var modal = document.getElementById("myModal");
   modal.style.display = "block";
 
-  fetch('https://filrouge.uha4point0.fr/V2/livres/livres')  
+  fetch('/Book_Store/php_pages/apiFromDB.php')  
       .then(response => response.json())
       .then(data => {
           var booksList = document.getElementById('books-list');
@@ -60,7 +65,6 @@ function openModal(auteurId) {
                   bookCard.innerHTML = `
                       <h3>${book.titre} (${book.sorti})</h3>
                       <p class="book-info">${book.synopsis}</p>
-                      <p class="book-genre">Genres: ${book.genre.join(', ')}</p>
                       <p class ="book-pages">Pages: ${book.pages}</p>
                       <p class="book-price">Prix: ${book.prix}€</p>
                   `;

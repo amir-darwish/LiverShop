@@ -34,6 +34,8 @@
     <h1 class="heading"> <span>Livres Papiers</span></h1>
     <div class="featured-slider">
         <div class="wrapper-2" id="book-container">
+   
+
         </div>
     </div>
 </section>

@@ -50,13 +50,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
         `titre` varchar(50) NOT NULL,
         `sorti` varchar(4) NOT NULL,
         `synopsis` text DEFAULT NULL,
-        `auteur_id` int(11) NOT NULL,
+        `auteur` int(11) NOT NULL,
         `pages` int(11) NOT NULL,
         `prix` double NOT NULL,
         `photo` varchar(255) DEFAULT NULL,
         PRIMARY KEY (`id`),
-        KEY `auteur_id` (`auteur_id`),
-        CONSTRAINT `livres_ibfk_1` FOREIGN KEY (`auteur_id`) REFERENCES `auteurs` (`id`)
+        KEY `auteur` (`auteur`),
+        CONSTRAINT `livres_ibfk_1` FOREIGN KEY (`auteur`) REFERENCES `auteurs` (`id`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci";
     mysqli_query($conn, $sqlCommande);
     //create table livres_genres
@@ -155,13 +155,13 @@ foreach ($livres as $livre) {
     $auteur = mysqli_real_escape_string($conn, $livre["auteur"]);
     $pages = mysqli_real_escape_string($conn, $livre["pages"]);
     $prix = mysqli_real_escape_string( $conn, $livre["prix"]);
-    $photo = mysqli_real_escape_string( $conn,'../img/noimage.png'); 
-    if ($livre['id'] <= 14){
-        $photo = mysqli_real_escape_string( $conn,'../imgID/'. $livre['id'] . '.jpg'); 
+    $photo = mysqli_real_escape_string( $conn,'/Book_Store/imgID/noimage.png'); 
+    if ($livre['id'] < 15){
+        $photo = mysqli_real_escape_string( $conn,'/Book_Store/imgID/'. $livre['id'] . '.jpg'); 
     }
    
 
-    $sqlCommande = "INSERT INTO `livres` (`titre`, `sorti`, `synopsis`, `auteur_id`, `pages`, `prix`, `photo`) 
+    $sqlCommande = "INSERT INTO `livres` (`titre`, `sorti`, `synopsis`, `auteur`, `pages`, `prix`, `photo`) 
     VALUES ('$titre', '$sorti', '$synopsis', '$auteur', '$pages', '$prix', '$photo')";
     mysqli_query($conn, $sqlCommande);
     $livre_id = mysqli_insert_id($conn);

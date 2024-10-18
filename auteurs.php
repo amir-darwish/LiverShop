@@ -4,8 +4,8 @@ $conn = mysqli_connect($servername,$username,"",$dbname);
 
 $query = "SELECT * FROM `auteurs`";
 $result = mysqli_query($conn,$query);
-$data = mysqli_fetch_all($result, MYSQLI_ASSOC);
-$auteurs = $data;
+$auteurs = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
 // $api_url = 'https://filrouge.uha4point0.fr/V2/livres/auteurs';
 
 // $response = file_get_contents($api_url);

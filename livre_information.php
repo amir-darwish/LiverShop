@@ -1,9 +1,31 @@
 <?php
+
+function fetchData($url) {
+    $ch = curl_init();
+
+    // Settings of cURL
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2); 
+    // Start connect
+    $response = curl_exec($ch);
+
+    // errors handiling
+    if (curl_errno($ch)) {
+        echo 'Error:' . curl_error($ch);
+        $response = false; 
+    }
+
+    curl_close($ch);
+    return $response;
+}
+
 // Vérifier si l'id de l'auteur est passé via l'URL
 if (isset($_GET['id']) && $_GET['id'] !== '') {
     $livre_ID = $_GET['id'];
     $api_url = 'https://filrouge.uha4point0.fr/V2/livres/livres';
-    $response = file_get_contents($api_url);
+    $response = fetchData($api_url);
     $livres = json_decode($response, true);
     if ($response !== false) {
         $livres = json_decode($response, true);
@@ -24,7 +46,7 @@ else{
 }
 
 $api_url_auteurs='https://filrouge.uha4point0.fr/V2/livres/auteurs';
-$response = file_get_contents($api_url_auteurs);
+$response = fetchData($api_url_auteurs);
 if ($response !== false) {
     $auteurs = json_decode($response, true);
     foreach ($auteurs as $auteur) {
