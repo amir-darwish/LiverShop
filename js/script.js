@@ -7,7 +7,7 @@ document.querySelector('#close-login-btn').onclick = () => {
   loginForm.classList.remove('active');
 }
 //afficher les livres 
-fetch('/Book_Store/php_pages/apiFromDB.php') 
+fetch('/LivreShop/php_pages/apiFromDB.php') 
   .then(response => {
     return response.json();
   })
