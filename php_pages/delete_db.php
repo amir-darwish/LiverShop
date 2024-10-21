@@ -69,7 +69,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
         CONSTRAINT `livres_genres_ibfk_2` FOREIGN KEY (`genre_id`) REFERENCES `genres` (`id`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci";
     mysqli_query($conn, $sqlCommande);
-
+    //create new table
+    $sqlCommande = "CREATE TABLE IF NOT EXISTS `livres_num` (
+        `id` int(11) NOT NULL AUTO_INCREMENT,
+        `titre` varchar(50) NOT NULL,
+        `sorti` varchar(4) NOT NULL,
+        `synopsis` text DEFAULT NULL,
+        `auteur` int(11) NOT NULL,
+        `pages` int(11) NOT NULL,
+        `prix` double NOT NULL,
+        `photo` varchar(255) DEFAULT NULL,
+        PRIMARY KEY (`id`),
+        KEY `auteur` (`auteur`),
+        CONSTRAINT `livres_num_ibfk_1` FOREIGN KEY (`auteur`) REFERENCES `auteurs` (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci";
+    mysqli_query($conn, $sqlCommande);
         if (mysqli_query($conn, $sqlCommande)) {
             echo "create database .... <br> ";
         } else {
