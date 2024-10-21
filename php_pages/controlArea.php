@@ -49,7 +49,6 @@ $genres = mysqli_fetch_all($result, MYSQLI_ASSOC);
             <div class="genres">
 
             <?php
-            $str ='<label><input type="checkbox" name="genre1" id="genre1"> Fiction</label>';
             foreach ($genres as $genre) {
                 echo '<label><input type="checkbox" name='.'"'. $genre['nom'] .'"'.' id='.'"'. $genre['id'].'">'. $genre['nom'].'</label>';
             }
