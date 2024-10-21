@@ -1,3 +1,16 @@
+<?php 
+include("connection.php");
+$conn = mysqli_connect($servername,$username,"",$dbname);
+
+$query = "SELECT * FROM `auteurs`";
+$result = mysqli_query($conn,$query);
+$auteurs = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+$query = "SELECT * FROM `genres`";
+$result = mysqli_query($conn,$query);
+$genres = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,22 +34,27 @@
             <input type="text" placeholder="Title" name="title" id="title">
             <input type="number" min="1600" max="2099" step="1" value="2024" placeholder="Year">
             <textarea name="synopsis" id="synopsis" placeholder="Synopsis"></textarea>
-            
-            <label for="auteur">Author</label>
+            <label for="auteur">Auteur</label>
             <select name="auteur" id="auteur">
-                <option value="1">Author 1</option>      
-                <option value="2">Author 2</option>
-                <option value="3">Author 3</option>
+            <?php  
+            foreach($auteurs as $auteur){
+                echo "<option value=" . $auteur['id'] .">". $auteur['prenom'] . " ". $auteur['nom']. "</option> ";
+            }  
+            ?>
             </select>
 
             <input type="number" placeholder="Pages" name="pages" id="page">
             <input type="number" placeholder="Price" name="price" id="price">
             
             <div class="genres">
-                <label><input type="checkbox" name="genre1" id="genre1"> Fiction</label>
-                <label><input type="checkbox" name="genre2" id="genre2"> Science</label>
-                <label><input type="checkbox" name="genre3" id="genre3"> Biography</label>
-                <label><input type="checkbox" name="genre4" id="genre4"> Fantasy</label>
+
+            <?php
+            $str ='<label><input type="checkbox" name="genre1" id="genre1"> Fiction</label>';
+            foreach ($genres as $genre) {
+                echo '<label><input type="checkbox" name='.'"'. $genre['nom'] .'"'.' id='.'"'. $genre['id'].'">'. $genre['nom'].'</label>';
+            }
+            ?>
+
             </div>
             
             <input type="text" placeholder="Photo URL" name="photo" id="photo">
