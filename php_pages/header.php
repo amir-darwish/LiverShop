@@ -25,7 +25,7 @@
         <a href="index.php">Page Principles</a>
         <a href="auteurs.php">Auteurs</a>
         <a href="livers-papier.php">Livers Papiers</a>
-        <a href="#">Livers Numérique</a>
+        <a href="livres-num.php">Livers Numérique</a>
         <a href="#contact">Nous Contacter</a>
         </nav>
 

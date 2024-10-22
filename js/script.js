@@ -92,7 +92,41 @@ window.onclick = function(event) {
       modal.style.display = "none";
   }
 }
+//afficher les livres numerique
+fetch('/Book_Store/php_pages/apiLNFromDB.php') 
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    const container = document.getElementById('book-container2');
+    console.log(data); 
 
+    container.innerHTML = ''; 
+
+    data.forEach(book => {
+      const bookElement = document.createElement('div');
+      bookElement.classList.add('box');
+
+      bookElement.innerHTML = `
+        <div class="icons">
+          <a href="https://www.google.com/search?q=${book.titre}" target="_blank" class="fas fa-search"></a>
+          <a href="#" class="fa-solid fa-book-open-reader"></a>
+          <a href="livre_information.php?id=${book.id}" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="${book.photo}" alt="">
+        </div>
+        <div class="content">
+          <h3>${book.titre}</h3>
+          <div class="price">${book.prix} €</div>
+          <a href="#" class="btn">Ajouter au panier</a>
+        </div>
+      `;
+
+      container.appendChild(bookElement);
+    });
+  })
+  .catch(error => console.error('Error fetching data:', error));
 
 
 

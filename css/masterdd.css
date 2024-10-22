@@ -365,7 +365,7 @@ section{
     color: var(--light-color);
     text-decoration: line-through;
 }
-.wrapper-2, .book-container{
+.wrapper-2, .book-container .book-container2{
 
     display:flex;
     gap: 2.5rem; 
