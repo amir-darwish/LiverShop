@@ -34,7 +34,7 @@
         <div class="featured-slider">
             <div class="wrapper-2" id="book-container"></div>
         </div>
-        <div id="pagination"></div> <!-- عنصر التنقل بين الصفحات -->
+        <div id="pagination"></div>
     </section>
     <script src="js/script.js"></script>
     <!-- featured section end  -->

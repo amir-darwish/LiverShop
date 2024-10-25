@@ -1,20 +1,27 @@
 <?php
 include("php_pages/connection.php");
-$conn = mysqli_connect($servername,$username,"",$dbname);
+$conn = mysqli_connect($servername, $username, "", $dbname);
 
-$query = "SELECT * FROM `auteurs`";
-$result = mysqli_query($conn,$query);
+// number of auteurs per page
+$records_per_page = 5;
+
+// set the current page from the URL or set the default page to 1
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$offset = ($page - 1) * $records_per_page;
+
+// count the total number of records
+$total_query = "SELECT COUNT(*) as total FROM `auteurs`";
+$total_result = mysqli_query($conn, $total_query);
+$total_row = mysqli_fetch_assoc($total_result);
+$total_records = $total_row['total'];
+
+// calculate the total number of pages 
+$total_pages = ceil($total_records / $records_per_page);
+
+// fetch the data from the database
+$query = "SELECT * FROM `auteurs` LIMIT $records_per_page OFFSET $offset";
+$result = mysqli_query($conn, $query);
 $auteurs = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-// $api_url = 'https://filrouge.uha4point0.fr/V2/livres/auteurs';
-
-// $response = file_get_contents($api_url);
-
-// if ($response !== false) {
-//     $auteurs = json_decode($response, true);
-// } else {
-//     $auteurs = [];
-// }
 ?>
 
 <!DOCTYPE html>
@@ -73,6 +80,15 @@ $auteurs = mysqli_fetch_all($result, MYSQLI_ASSOC);
          echo '<h2>Aucun auteur trouvé.</h2>';
         }
         ?>
+    </div>
+
+    <!-- Pagintation -->
+    <div id="pagination">
+        <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+            <button <?php if ($i == $page) echo 'class="active"'; ?>>
+            <a href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+        </button>
+        <?php endfor; ?>
     </div>
 
     <!-- POP - UP -->

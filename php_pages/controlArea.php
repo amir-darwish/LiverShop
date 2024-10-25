@@ -28,9 +28,8 @@ $genres = mysqli_fetch_all($result, MYSQLI_ASSOC);
         
         document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('submit').addEventListener('click', function(e) {
-                e.preventDefault(); // منع إعادة تحميل الصفحة
-
-                // جمع البيانات من النموذج
+                e.preventDefault(); // block refresh page
+               // 
                 var titre = document.getElementById('Titre').value;
                 var sorti = document.querySelector('input[type="number"][placeholder="Sorti"]').value;
                 var synopsis = document.getElementById('synopsis').value;
@@ -39,13 +38,12 @@ $genres = mysqli_fetch_all($result, MYSQLI_ASSOC);
                 var prix = document.getElementById('prix').value;
                 var photo = document.getElementById('photo').value;
 
-                // جمع بيانات التصنيفات (genres)
                 var genres = [];
                 document.querySelectorAll('.genres input[type="checkbox"]:checked').forEach(function(checkbox) {
                     genres.push(checkbox.id);
                 });
 
-                // إعداد البيانات التي سيتم إرسالها إلى ملف PHP
+                // Prepare an object data to send
                 var formData = new FormData();
                 formData.append('titre', titre);
                 formData.append('sorti', sorti);
@@ -56,7 +54,7 @@ $genres = mysqli_fetch_all($result, MYSQLI_ASSOC);
                 formData.append('photo', photo);
                 formData.append('genres', genres.join(','));
 
-                // إرسال البيانات باستخدام AJAX
+                // send data by AJAX to add_livre.php
                 var xhr = new XMLHttpRequest();
                 xhr.open('POST', 'add_livre.php', true);
                 xhr.onload = function() {
@@ -108,7 +106,7 @@ $genres = mysqli_fetch_all($result, MYSQLI_ASSOC);
     </div>
 
     <!-- Form to delete database -->
-    <form action="delete_db.php" method="POST" onsubmit="return confirmDelete()">
+    <form action="reset_db.php" method="POST" onsubmit="return confirmDelete()">
         <button type="submit" name="delete" class="delete-btn">RESET DATABASE</button>
     </form>
     <br>

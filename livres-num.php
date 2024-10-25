@@ -31,13 +31,14 @@
 
     <!-- featured section starts  -->
     <section class="featured" id="featured">
-    <h1 class="heading"> <span>Livres Papiers</span></h1>
+    <h1 class="heading"> <span>Livres Numériques</span></h1>
     <div class="featured-slider">
         <div class="wrapper-2" id="book-container2">
    
 
         </div>
     </div>
+    <div id="pagination"></div>
 </section>
     <script src="js/script.js"></script>
     <!-- featured section end  -->
