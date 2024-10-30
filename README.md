@@ -2,7 +2,7 @@
 Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
 
 1. **Système d'Exploitation Ubuntu LINUX**
-   - Ce projet est conçu pour fonctionner sous Ubuntu Linux. Assurez-vous que ce système est bien installé et à jour.
+   - Le script est conçu pour fonctionner sous Ubuntu Linux. Assurez-vous que ce système est bien installé et à jour.
 
 2. **GIT**
    - Requis pour le contrôle de version. Si Git n'est pas installé sur votre système, vous pouvez l'installer en utilisant la commande suivante :
