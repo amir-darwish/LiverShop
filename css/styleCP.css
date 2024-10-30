@@ -105,3 +105,132 @@ button:hover, .delete-btn:hover {
 .delete-btn:hover {
     background-color: #c82333;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #444;
+    color: #f1c40f;
+}
+
+thead th {
+    padding: 12px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+tbody td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    font-size: 15px;
+    white-space: nowrap;          
+    overflow: hidden;              
+    text-overflow: ellipsis;       
+    max-width: 150px;              
+}
+
+tbody tr {
+    transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+    background-color: #383838;
+}
+
+tbody td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    font-size: 15px;
+}
+
+/* Styling buttons inside the table */
+td button {
+    padding: 8px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+td button:hover {
+    transform: scale(1.05);
+}
+
+td button:active {
+    transform: scale(0.95);
+}
+
+td button:first-child {
+    background-color: #eccf57;
+    color: rgb(49, 45, 45);
+}
+
+td button:first-child:hover {
+    background-color: #b99504;
+}
+
+td button:last-child {
+    background-color: #e74c3c;
+    color: white;
+}
+
+td button:last-child:hover {
+    background-color: #c0392b;
+}
+
+input, textarea, select {
+    background-color: #444;
+    color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    background-color: #555;
+    border-color: #f1c40f;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #333;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f00;
+}
+
+
