@@ -1,4 +1,4 @@
-Prérequis : 
+**Prérequis : **
 Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
 
 1. **Système d'Exploitation Ubuntu LINUX**
@@ -14,6 +14,13 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
    - XAMPP est nécessaire pour configurer un environnement avec Apache, MySQL, PHP et Perl. Vous pouvez télécharger XAMPP depuis le [site officiel](https://www.apachefriends.org/index.html).
 
 
-~~~~<details><summary>Click to expand</summary>
+________
+Déploiement du projet : 
+1.	Téléchargez le script de déploiement :
+    •	Télécharger script.sh.
+2.	Rendez le script exécutable :
+    •	Ouvrez un terminal et utilisez cd [Chemin vers le fichier] pour vous rendre dans le dossier où se trouve le script de déploiement.
+    •	Exécutez la commande suivante : chmod +x script.sh.
+3.	Lancez le script :
+    •	Utilisez la commande ./script.sh.
 
-</details>~~~~
