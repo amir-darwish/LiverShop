@@ -50,3 +50,23 @@ Instructions pour utiliser le projet après le déploiement.
 
 2. **Accédez au projet dans un navigateur :**
    - Une fois Apache démarré، ouvrez un navigateur et accédez à l'URL suivante pour voir le projet en cours d'exécution : http://localhost/LivreShop
+
+   ## À propos de LivreShop
+
+LivreShop est une boutique en ligne dédiée à la vente de livres, offrant une interface moderne et conviviale. Voici un aperçu des principales fonctionnalités du site :
+
+- **Promotion** : La page d'accueil affiche une offre spéciale avec des réductions allant jusqu'à 75%, incitant les utilisateurs à acheter des livres à des prix attractifs.
+
+- **Barre de navigation** : Le menu de navigation inclut des sections telles que **Page Principales**, **Auteurs**, **Livres Papiers**, **Livres Numérique**, et **Nous Contacter**, permettant aux utilisateurs de naviguer facilement entre les différentes pages et catégories de livres.
+
+- **Recherche** : Une barre de recherche située en haut de la page permet aux utilisateurs de rechercher des livres rapidement en utilisant des mots-clés.
+
+- **Avantages du service** : Le site met en avant plusieurs avantages pour les utilisateurs :
+  - **Livraison Gratuite** : Livraison gratuite pour les commandes supérieures à 50€.
+  - **Paiement Sécurisé** : Un système de paiement sécurisé pour garantir la sécurité des transactions.
+  - **Retour Facile** : Possibilité de retourner les livres facilement sous 10 jours.
+  - **Support 24h/24 et 7j/7** : Un service client disponible 24 heures sur 24, 7 jours sur 7.
+
+- **Offres spéciales** : Une section intitulée **Notre Offers** présente une sélection de livres en promotion, permettant aux utilisateurs de parcourir les livres mis en avant.
+
+En résumé, LivreShop vise à offrir une expérience d'achat simple et sécurisée pour les amateurs de lecture, avec des promotions attractives et des services pratiques.
