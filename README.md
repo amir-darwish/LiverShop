@@ -1,4 +1,4 @@
-**Prérequis : **
+## Prérequis : 
 Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
 
 1. **Système d'Exploitation Ubuntu LINUX**
