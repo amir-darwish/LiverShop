@@ -37,3 +37,16 @@ Pour déployer le projet, suivez les étapes suivantes :
      ```bash
      ./script.sh
      ```
+## Utilisation
+
+Instructions pour utiliser le projet après le déploiement.
+
+1. **Ouvrez XAMPP et démarrez le serveur Apache :**
+   - Lancez XAMPP avec la commande suivante pour ouvrir le panneau de contrôle :
+     ```bash
+     sudo /opt/lampp/manager-linux-x64.run
+     ```
+   - Dans le panneau de contrôle, démarrez les services **Apache** et **MySQL**.
+
+2. **Accédez au projet dans un navigateur :**
+   - Une fois Apache démarré، ouvrez un navigateur et accédez à l'URL suivante pour voir le projet en cours d'exécution :
