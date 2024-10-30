@@ -14,11 +14,6 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
    - XAMPP est nécessaire pour configurer un environnement avec Apache, MySQL, PHP et Perl. Vous pouvez télécharger XAMPP depuis le [site officiel](https://www.apachefriends.org/index.html).
 
 
-| header | header |
-| ------ | ------ |
-|        |        |
-|        |        |<details><summary>Click to expand</summary>
-| header | header |
-| ------ | ------ |
-|        |        |
-|        |        |</details>
+~~~~<details><summary>Click to expand</summary>
+
+</details>~~~~
