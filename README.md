@@ -51,22 +51,28 @@ Instructions pour utiliser le projet après le déploiement.
 2. **Accédez au projet dans un navigateur :**
    - Une fois Apache démarré، ouvrez un navigateur et accédez à l'URL suivante pour voir le projet en cours d'exécution : http://localhost/LivreShop
 
-   ## À propos de LivreShop
+## Fonctionnalités de LivreShop
 
-LivreShop est une boutique en ligne dédiée à la vente de livres, offrant une interface moderne et conviviale. Voici un aperçu des principales fonctionnalités du site :
+1. **Navbar & Catégories** : La barre de navigation (Navbar) contient des sections permettant de classer les livres par catégories, offrant ainsi aux utilisateurs une manière rapide de parcourir les livres en fonction de leur genre ou de leur type.
 
-- **Promotion** : La page d'accueil affiche une offre spéciale avec des réductions allant jusqu'à 75%, incitant les utilisateurs à acheter des livres à des prix attractifs.
+2. **Page d'accueil** : Affiche une sélection de 5 livres en avant, permettant aux utilisateurs de découvrir facilement des titres populaires ou recommandés dès leur arrivée sur le site.
 
-- **Barre de navigation** : Le menu de navigation inclut des sections telles que **Page Principales**, **Auteurs**, **Livres Papiers**, **Livres Numérique**, et **Nous Contacter**, permettant aux utilisateurs de naviguer facilement entre les différentes pages et catégories de livres.
+3. **Navigation par Auteurs** : Les utilisateurs peuvent également explorer les livres en fonction des auteurs. En sélectionnant un auteur, le site affiche tous les livres disponibles de cet auteur, offrant une navigation personnalisée et centrée sur les écrivains.
 
-- **Recherche** : Une barre de recherche située en haut de la page permet aux utilisateurs de rechercher des livres rapidement en utilisant des mots-clés.
+4. **Page de détails du livre** : Lorsqu'un utilisateur clique sur un livre, il est redirigé vers une page dédiée qui affiche toutes les informations pertinentes sur le livre, y compris :
+   - **Nom du livre**
+   - **Date de sortie**
+   - **Synopsis**
+   - **Prix**
+   - **Nombre de pages**
 
-- **Avantages du service** : Le site met en avant plusieurs avantages pour les utilisateurs :
-  - **Livraison Gratuite** : Livraison gratuite pour les commandes supérieures à 50€.
-  - **Paiement Sécurisé** : Un système de paiement sécurisé pour garantir la sécurité des transactions.
-  - **Retour Facile** : Possibilité de retourner les livres facilement sous 10 jours.
-  - **Support 24h/24 et 7j/7** : Un service client disponible 24 heures sur 24, 7 jours sur 7.
+5. **Recherche avancée** : En cliquant sur l'icône de recherche, l'utilisateur est redirigé vers une page Google affichant les résultats de recherche pour le livre sélectionné, permettant d’obtenir des informations supplémentaires et des avis externes.
 
-- **Offres spéciales** : Une section intitulée **Notre Offers** présente une sélection de livres en promotion, permettant aux utilisateurs de parcourir les livres mis en avant.
+6. **Système de gestion pour l'administrateur** : Un système de connexion est mis en place spécifiquement pour l'administrateur. Une fois connecté, l'administrateur peut gérer le contenu des livres numériques, avec les fonctionnalités suivantes :
+   - **Ajouter un livre** : Permet d'ajouter de nouveaux livres numériques à la collection.
+   - **Modifier un livre** : L'administrateur peut mettre à jour les informations d'un livre existant.
+   - **Supprimer un livre** : Possibilité de retirer un livre numérique de la collection si nécessaire.
 
-En résumé, LivreShop vise à offrir une expérience d'achat simple et sécurisée pour les amateurs de lecture, avec des promotions attractives et des services pratiques.
+Ces fonctionnalités permettent à LivreShop de fournir une expérience utilisateur intuitive pour les lecteurs, tout en offrant un contrôle complet pour l’administrateur pour maintenir et actualiser la bibliothèque numérique.
+
+
