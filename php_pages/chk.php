@@ -2,8 +2,8 @@
 session_start();
 
 
-$admins = ["AMIR"];
-$password_def = "m123321";
+$admins = ["admin"];
+$password_def = "passadmin";
 if ($_SERVER['REQUEST_METHOD'] == "POST"){
 
     $user = $_POST['username'];
