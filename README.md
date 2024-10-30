@@ -49,4 +49,4 @@ Instructions pour utiliser le projet après le déploiement.
    - Dans le panneau de contrôle, démarrez les services **Apache** et **MySQL**.
 
 2. **Accédez au projet dans un navigateur :**
-   - Une fois Apache démarré، ouvrez un navigateur et accédez à l'URL suivante pour voir le projet en cours d'exécution :
+   - Une fois Apache démarré، ouvrez un navigateur et accédez à l'URL suivante pour voir le projet en cours d'exécution : http://localhost/LivreShop
