@@ -68,11 +68,19 @@ Instructions pour utiliser le projet après le déploiement.
 
 5. **Recherche avancée** : En cliquant sur l'icône de recherche, l'utilisateur est redirigé vers une page Google affichant les résultats de recherche pour le livre sélectionné, permettant d’obtenir des informations supplémentaires et des avis externes.
 
-6. **Système de gestion pour l'administrateur** : Un système de connexion est mis en place spécifiquement pour l'administrateur. Une fois connecté, l'administrateur peut gérer le contenu des livres numériques, avec les fonctionnalités suivantes :
-   - **Ajouter un livre** : Permet d'ajouter de nouveaux livres numériques à la collection.
-   - **Modifier un livre** : L'administrateur peut mettre à jour les informations d'un livre existant.
-   - **Supprimer un livre** : Possibilité de retirer un livre numérique de la collection si nécessaire.
 
-Ces fonctionnalités permettent à LivreShop de fournir une expérience utilisateur intuitive pour les lecteurs, tout en offrant un contrôle complet pour l’administrateur pour maintenir et actualiser la bibliothèque numérique.
 
+## Système de gestion pour l'administrateur
+
+Un accès spécifique est réservé à l'administrateur pour gérer les livres numériques sur le site. Une fois connecté, l'administrateur peut ajouter, modifier et supprimer des livres. Voici les informations de connexion pour accéder au panneau d'administration :
+
+- **Utilisateur** : `admin`
+- **Mot de passe** : `passadmin`
+
+### Fonctionnalités du panneau d'administration :
+- **Ajouter un livre** : Permet d'ajouter de nouveaux livres numériques à la collection.
+- **Modifier un livre** : L'administrateur peut mettre à jour les informations d'un livre existant.
+- **Supprimer un livre** : Possibilité de retirer un livre numérique de la collection si nécessaire.
+
+Ces fonctionnalités permettent à l'administrateur de maintenir la bibliothèque numérique à jour et de gérer facilement le contenu disponible pour les utilisateurs.
 
