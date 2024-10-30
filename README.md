@@ -15,12 +15,25 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
 
 
 ________
-Déploiement du projet : 
-1.	Téléchargez le script de déploiement :
-    •	Télécharger script.sh.
-2.	Rendez le script exécutable :
-    •	Ouvrez un terminal et utilisez cd [Chemin vers le fichier] pour vous rendre dans le dossier où se trouve le script de déploiement.
-    •	Exécutez la commande suivante : chmod +x script.sh.
-3.	Lancez le script :
-    •	Utilisez la commande ./script.sh.
+## Déploiement du projet
 
+Pour déployer le projet, suivez les étapes suivantes :
+
+1. **Téléchargez le script de déploiement :**
+   - Téléchargez le fichier `script.sh`.
+
+2. **Rendez le script exécutable :**
+   - Ouvrez un terminal et utilisez la commande suivante pour accéder au dossier où se trouve le script de déploiement :
+     ```bash
+     cd [Chemin vers le fichier]
+     ```
+   - Rendre le script exécutable en utilisant la commande :
+     ```bash
+     chmod +x script.sh
+     ```
+
+3. **Lancez le script :**
+   - Exécutez le script en utilisant la commande suivante :
+     ```bash
+     ./script.sh
+     ```
