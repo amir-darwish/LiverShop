@@ -46,19 +46,24 @@ $genres = mysqli_fetch_all($result, MYSQLI_ASSOC);
         }
         
         function editBook(id) {
-
-
-   // select the book by id
+   
     document.getElementById("bookId").value = id;
 
+    document.getElementById("editTitre").value = "Book Title"; 
+    document.getElementById("editSorti").value = "2024"; 
+    document.getElementById("editSynopsis").value = "Book Synopsis"; 
+    document.getElementById("editAuteur").value = "1"; 
+    document.getElementById("editPages").value = "200"; 
+    document.getElementById("editPrix").value = "20"; 
+    document.getElementById("editPhoto").value = "https://example.com/photo.jpg"; 
 
-    // display the modal
     document.getElementById("editModal").style.display = "block";
 }
 
 function closeModal() {
     document.getElementById("editModal").style.display = "none";
 }
+
 
 function saveChanges() {
     var id = document.getElementById("bookId").value;
