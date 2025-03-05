@@ -84,3 +84,12 @@ Un accès spécifique est réservé à l'administrateur pour gérer les livres n
 
 Ces fonctionnalités permettent à l'administrateur de maintenir la bibliothèque numérique à jour et de gérer facilement le contenu disponible pour les utilisateurs.
 
+Photos : 
+![Screenshot from 2025-03-05 23-52-56](https://github.com/user-attachments/assets/9812a43f-6b51-4d1d-85e4-e34d78b455db)
+![Screenshot from 2025-03-05 23-53-05](https://github.com/user-attachments/assets/7fe04b87-5e0a-49ec-80a5-c6ed63ef0345)
+![Screenshot from 2025-03-05 23-53-29](https://github.com/user-attachments/assets/bed705de-585f-4629-9bf6-70e096adda82)
+![Screenshot from 2025-03-06 00-00-35](https://github.com/user-attachments/assets/67849bbc-1bdb-478a-bbd9-9250ba7e5901)
+![Screenshot from 2025-03-06 00-00-46](https://github.com/user-attachments/assets/6051059b-fe95-420f-97bd-e6ac884c91b1)
+![image](https://github.com/user-attachments/assets/5d7b3615-73f5-4ba7-91ec-9b9af91236f2)
+
+
